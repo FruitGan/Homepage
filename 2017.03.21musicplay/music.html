@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>musicplay</title>
+	</head>
+	<!--<script src="js/music.js"></script>-->
+	<script src='../2017.04.10zhipai/jquery.min.js'></script>
+	<script src='js/jquery.js'></script>
+	<link rel="stylesheet" href="css/music.css" />
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<body>
+	<div id="g_one">
+
+	</div>
+	<div class="box">
+		<audio src="music/双笙 - 长安忆.mp3"></audio>
+		<div class="list" >
+			<h1>慢生活，慢节奏</h1>
+			<ul style="">
+				<li>
+					<span>播放状态</span>
+					<span>歌名</span>
+					<span>作者</span>
+					<span>专辑</span>
+					<span >功能</span>
+				</li>
+			</ul>
+			<ul>
+
+			</ul>
+		</div>
+		<div class="lyric ">
+			<span>长安忆</span>
+			<span>双笙</span>
+			<ul>
+
+			</ul>
+			<canvas id="canvas" width="800" height="250"></canvas>
+		</div>
+
+		<div class="bottom">
+			<div class="function">
+				<ul>
+					<li class="pre"><span class="iconfont icon-shangyishou"></span></li>
+					<li  class="play"><span class="iconfont icon-bofang"></span></li>
+					<li  class="next"><span class="iconfont icon-xiayishou"></span></li>
+				</ul>
+			</div>
+			<div class="icon"></div>
+			<div class="jindu">
+				<div class="author">
+					<span>长安忆</span>
+					<span>-----</span>
+					<span>双笙</span>
+				</div> <!--作者信息-->
+				<div class="bar">
+					<div class="tiao">
+						<div class="load"></div>
+						<div class="circle"></div>
+						<div class="played"></div>
+					</div>
+				</div>
+				<div class="time">
+					<span>00:00</span>
+					<span>/</span>
+					<span>04:30</span>
+				</div>
+			</div>
+			<div class="voice">
+				<div class="voice-l">
+					<span class="iconfont icon-yinliang"></span>
+				</div>
+				<div class="voice-r">
+					<div class="tiao">
+						<div class="load"></div>
+						<div class="circle"></div>
+						<div class="played"></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="menu">
+				<span class="iconfont icon-caidan"></span>
+			</div>
+		</div>
+	</div>
+		<div class="mei">
+			<div class="g_img" style="">
+				<img class="zp" src="img/radio03.png" alt="" style="width: 100%;">
+				<ul class="tit">
+					<li class="t_name">歌曲名：稻香</li>
+					<li  class="t_aut">作者：周杰伦</li>
+					<li  class="t_zj">专辑：周杰伦专辑</li>
+				</ul>
+				<ul class="ci">
+
+				</ul>
+			</div>
+			<div class="detail"></div>
+		</div>
+	</body>
+</html>
+<script src="js/main.js"></script><!--只能写最后边-->

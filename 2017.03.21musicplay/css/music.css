@@ -1,0 +1,332 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "微软雅黑";
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+#g_one{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/fo1.jpg);
+	background-size: cover;
+	filter:blur(18px);
+	/*filter: grayscale(100%);*/
+	/*filter: invert(100%);*/
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+.box{
+	width: 900px;
+	height: 100%;
+	position: absolute;
+	left:10px;
+	top:0;
+}
+.mei{
+	width:calc(100% - 880px);
+	position: absolute;
+	right:0;
+	top:0;
+}
+.g_img{
+	width: 200px;
+	height: 200px;
+	margin:70px auto;
+}
+.g_img>img{
+	display: block;
+}
+.tit{
+	width:200px;
+	margin:20px auto;
+}
+.tit>li{
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	color: rgba(225,225,225,.8);
+	font-weight: 600;
+}
+.ci{
+	width:100%;
+	height:160px;
+	overflow: hidden;
+	margin-top:60px;
+}
+.ci>li{
+	width:100%;
+	/*height:30px;*/
+	/*line-height: 30px;*/
+	text-align: center;
+	color: rgba(225,225,225,.8);
+	margin-bottom:20px;
+}
+.ci>li.g_f{
+	color: #000;
+}
+.box .list{
+	width: 100%;
+	height: 85%;
+	/*background: rgba(0,0,0,.2);*/
+	position: relative;
+}
+.list-o{
+	display:none;
+}
+.lyric{
+	width: 100%;
+	height: 85%;
+	padding-top:50px;
+	box-sizing: border-box;
+	/*background: rgba(0,0,0,.2);*/
+	display: none;
+}
+.lyric-o{
+	display:block;
+	position: relative;
+}
+.lyric span{
+	display: block;
+	width: 100%;
+	height: 5%;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+}
+.lyric ul{
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+}
+.lyric ul li{
+	width: 100%;
+	height:auto;
+}
+.lyric ul li{
+	display: block;
+	width: 100%;
+	height: 30px;
+	/*color: #fff;*/
+	color: rgba(225,225,225,.8);
+	line-height: 30px;
+	text-align: center;
+}
+.lyric ul li.ly{
+	color: #000;
+}
+.list h1{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	text-align: left;
+	padding-left:50px;
+	font-size: 30px;
+	color: #F0EFEE;
+}
+.list>ul{
+	width: 800px;
+	height: 30px;
+	margin: 0 auto;
+	/*display: flex;*/
+}
+.list>ul>li{
+	width: 100%;
+	height: 100%;
+}
+.list ul li span{
+	display: block;
+	width: 20%;
+	height: 30px;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 580;
+	color: #F0EFEE;
+}
+.list ul:nth-of-type(2) li span{
+	font-size: 18px;
+}
+.list ul:nth-of-type(1){
+	margin-bottom:10px;
+}
+.list ul:nth-of-type(2) li{
+	border-bottom:1px solid rgba(255,255,255,0.1);
+	height:40px;
+	line-height: 40px;
+}
+li.active{
+	background: rgba(255,255,255,0.3);
+}
+/*canvas*/
+canvas{
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	bottom: 0;
+}
+/*下面的icon*/
+.box .bottom{
+	width: 100%;
+	height: 15%;
+	/*background: rgba(0,0,0,.2);*/
+	display: flex;
+}
+.function{
+	width: 20%;
+	height: 100%;
+}
+.function ul{
+	width: 100%;
+	height: 100%;
+}
+.function ul li{
+	width: 33.333333333333333333333333333333333333333333333333333333%;
+	height: 100%;
+	float:left;
+	text-align: center;
+	line-height: 100px;
+}
+.function ul li span{
+	color: #ccc;
+	font-size: 30px;
+}
+.function ul li:nth-child(2) span{
+	font-size: 34px;
+}
+.function ul li span:hover{
+	color: #fff;
+}
+/*功能区结束*/
+/*小图片*/
+.icon{
+	width: 9%;
+	height: 80%;
+	margin-top:10px;
+	background-image: url(../icon-img/ss.jpg);
+	background-size: cover;
+	border-radius: 50%;
+}
+/*进度条*/
+.jindu{
+	width: 40%;
+	height: 100%;
+	/*background: seagreen;*/
+	margin-left:10px;
+}
+.jindu .author{
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	line-height: 30px;
+}
+.author span{
+	/*color: #fff;*/
+	color: rgba(225,225,225,.8);
+}
+.jindu .bar{
+	width: 100%;
+	height: 40%;
+	position: relative;
+}
+.tiao{
+	width: 96%;
+	height: 5px;
+	background: slateblue;
+	border-radius: 7px;
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	left: 2%;
+}
+.load{
+	width: 0%;
+	height: 5px;
+	background: #888;
+	border-radius: 7px;
+	transition:width 1s linear;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.played{
+	width: 0%;
+	height: 5px;
+	background:skyblue;
+	border-radius: 7px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.circle{
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: -3px;
+	left: -5px;
+	z-index: 5;
+}
+.time{
+	width: 100%;
+	height: 30%;
+	text-align: center;
+}
+.time span{
+	color: #F0EFEE;
+}
+/*调节音量*/
+.voice{
+	width: 20%;
+	height: 100%;
+	/*background: aqua;*/
+	position: relative;
+	margin-left:10px;
+}
+.voice-l{
+	width: 20%;
+	height: 100%;
+	/*background: red;*/
+	float: left;
+	line-height: 94px;
+	text-align: center;
+}
+.voice-l span{
+	color: #fff;
+	font-size: 25px;
+}
+.voice-r{
+	width: 80%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+.voice-r .circle{
+	left: 130px;
+}
+.voice-r .played{
+	width: 100%;
+}
+/*选项*/
+.menu{
+	width: 5%;
+	height: 100%;
+	/*background:blue;*/
+	text-align: center;
+	line-height: 90px;
+}
+.menu span{
+	color: #fff;
+	font-size: 25px;
+}
+

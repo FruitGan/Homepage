@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: url(../img/9.jpg);
+}
+.header{
+    width: 100%;
+    height: 8.27rem;
+    background: url(../img/bj2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    .zhe{
+        width: 7rem;
+        height: auto;
+        background: rgba(255,255,255,0.2);
+        margin: 0 auto;
+        position: relative;
+        .nav{
+            width:100%;
+            height: 0.35rem;
+            float: right;
+            position: absolute;
+            right: 0rem;
+            top:2rem;
+            &>a{
+                width: 1.4rem;
+                height: 100%;
+                float: left;
+                line-height: 0.35rem;
+                text-align: center;
+                font-size: 0.24rem;
+                color: #EA385C;
+                &:hover{
+                    text-decoration: none;
+                    color:  skyblue;
+                }
+            }
+            .gjr-one{
+                color: skyblue;
+            }
+        }
+        .yuan{
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            right: 2.8rem;
+            top: 3rem;
+            &>img{
+                width: 1.5rem;
+            }
+        }
+        .zym{
+            width: 7rem;
+            height: 0.80rem;
+            position: absolute;
+            right: 0rem;
+            top: 5rem;
+            color:#EA385C;
+            p{
+                font-size: 0.26rem;
+                line-height: 0.4rem;
+                text-align: center;
+            }
+        }
+    } 
+}
+@keyframes jj{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform:translateY(-0px)
+    }
+}
+@keyframes xz{
+    0%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.kimg{
+    animation:xz 1s forwards;
+}
+.wh{
+    animation:jj 1s forwards;
+}
+.gjr-flash{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background: #000;
+}
+.work1:hover{
+    transform: scale(1.1);
+}
+.work1{
+    transition: all 1s;
+}
+.flash:hover{
+    opacity: 1;
+}
+.skill{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 0.3rem;
+    img{
+        width: 1.5rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .sh4{
+        color: #EA385C;
+        width: 100%;
+        height: 0.4rem;
+        margin-top: 0.2rem;
+        line-height: 0.4rem;
+        text-align: center;
+        font-size: 0.22rem;
+    }
+    .sjs{
+        color: #C0C0C0;
+        width: 100%;
+        font-size: 0.18rem;
+        line-height: 0.3rem;
+        text-align: center;
+    }
+}
+p.workhead {
+    font-size: 40px;
+    width: 100%;
+    color: #EA385C;
+    text-align: center;
+    margin-top: 40px;
+}
+p.workhead:after{
+    font-size: 0.18rem;
+    content: '-----------------------------------------';
+    display: block;
+}
+p.contacthead:after{
+    font-size: 0.18rem;
+    content: '-----------------------------------------';
+    display: block;
+    
+}
+@keyframes fj{
+    0%{
+        transform: translateY(0.3rem);
+    }
+    100%{
+        transform: translateY(-0.3rem);
+    }
+}
+.xfj{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: fixed;
+    right: 0.3rem;
+    bottom: 0.5rem;
+    display: none;
+    animation: fj 2s linear alternate infinite;
+    span{
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 0.5rem;
+        text-align: center;
+        font-size: 34px;
+        color:#EA385C;
+    }
+}
+.fj{
+    display: block;
+}
+.list{
+    margin-top: 0.3rem;
+    width: 100%;
+    p{
+        width: 100%;
+        height: 0.4rem;
+        font-size: 0.26rem;
+        color: #EA385C;
+        span{
+            font-size: 0.26rem;
+            color: #C0C0C0;
+        }
+    }
+}
+.xx{
+    width: 100%;
+    margin-top: 0.2rem;
+    p{
+        width: 100%;
+        font-size: 0.26rem;
+        color: #C0C0C0;
+    }
+    p:first-child{
+        color: #EA385C; 
+    }
+}
+@keyframes zhuan{
+    0%{
+        transform: rotateX(0);
+    }
+    40%{
+        transform:rotateX(360deg);
+    }
+    100%{
+        transform:rotateX(360deg);
+    }
+}
+.gr{
+    width: 100%;
+    margin-top: 0.5rem;
+    .img{
+        width: 3rem;
+        height: 3rem;
+        margin: 0 auto;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+        border-radius: 50%;
+    }
+    .wk{
+        margin-top: 0.3rem;
+        width: 100%;
+        text-align: center;
+        font-size: 0.26rem;
+        color:  #EA385C;
+        animation:zhuan 3s linear infinite;
+    }
+}
+
